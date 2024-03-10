@@ -1,0 +1,68 @@
+
+.login form {
+  max-width: 40rem;
+  border-radius: .5rem;
+  padding: 2rem;
+  background: #fff;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  border: 0.2rem solid #333;
+  margin: 1rem auto;
+}
+
+.login form h3 {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.login form .box {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  border-radius: .5rem;
+  border: 0.2rem solid #333;
+  font-size: 1.6rem;
+  color: #666;
+  text-transform: none;
+  margin: .7rem 0;
+}
+
+.login form .remember {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.login form .remember label {
+  font-size: 1.5rem;
+  color: #666;
+  cursor: pointer;
+}
+
+.login form .btn {
+  width: 100%;
+  text-align: center;
+}
+
+.login form .btn.link {
+  background: #333;
+}
+
+.login form .btn.link:hover {
+  background: #0984e3;
+}
+
+.login form p {
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  color: #666;
+  text-align: center;
+  padding-bottom: 1rem;
+}

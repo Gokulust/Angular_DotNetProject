@@ -1,0 +1,5 @@
+.swal2-confirm.btn-danger {
+    background-color: red !important; /* Set the background color to red */
+    color: white !important; /* Set the text color to white */
+    border-color: red !important; /* Set the border color to red */
+  }

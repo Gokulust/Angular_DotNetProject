@@ -1,0 +1,70 @@
+<!-- <div class="container ">
+    <div class="row" style="margin-top: 6rem; margin-bottom:10rem;">
+        <div class="col-md-6" style="margin-left: 18rem;">
+            <h2 class="text-center">Add product</h2>
+            <form  (submit)="onSubmit()"  enctype="multipart/form-data">
+                <label for="">Name</label>
+                <input type="text" name="name" [(ngModel)]="formData.name" class="form-control" required>
+                <label for="">category</label>
+                <input type="text" name="category" [(ngModel)]="formData.category" class="form-control">  -->
+                <!-- <div class="mb-2 mt-2">
+                    <label class="form-label">Category</label>
+                    <select class="form-select mb-3" id="" name="category">
+                        <option selected> Open this select menu</option>
+                        <option></option>
+                    </select>
+                </div> -->
+                <!-- <label for="">price</label>
+                <input type="number" name="price" class="form-control" [(ngModel)]="formData.price" required>
+                <label for="">Description</label>
+                <input type="text" name="description" class="form-control"[(ngModel)]="formData.description" required> -->
+                <!-- <label for="">Expiry Date</label>
+                <input type="date" name="expirydate" class="form-control"> -->
+                <!-- <label for="">Quantity</label>
+                <input type="number" name="quantity" [(ngModel)]="formData.quantity" class="form-control">
+                <label for="">Image</label>
+                <input type="file" name="image" #fileInput placeholder=""  class="form-control" (change)="onFileSelected($event)" required>
+                <button class="btn d-inline-flex btn-sm btn-primary mx-1" type="submit">submit</button>
+            </form>
+        </div>
+    </div>
+</div> -->
+<div class="card shadow border-0 mb-7">
+    <div class="card-header">
+        <h5 class="mb-0">Add Product</h5>
+    </div>
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <form (submit)="onSubmit()" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="productName" class="form-label">Name</label>
+                        <input type="text" id="productName" name="productName" [(ngModel)]="formData.productName" class="form-control form-control-sm form-control-xs" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="productCategory" class="form-label">Category</label>
+                        <input type="text" id="productCategory" name="productCategory" [(ngModel)]="formData.productCategory" class="form-control form-control-sm form-control-xs">
+                    </div>
+                    <div class="mb-3">
+                        <label for="productPrice" class="form-label">Price</label>
+                        <input type="number" id="productPrice" name="productPrice" [(ngModel)]="formData.productPrice" class="form-control form-control-sm form-control-xs" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="productDescription" class="form-label">Description</label>
+                        <input type="text" id="productDescription" name="productDescription" [(ngModel)]="formData.productDescription" class="form-control form-control-sm form-control-xs" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="productQuantity" class="form-label">Quantity</label>
+                        <input type="number" id="productQuantity" name="productQuantity" [(ngModel)]="formData.productQuantity" class="form-control form-control-sm form-control-xs">
+                    </div>
+                    <div class="mb-3">
+                        <label for="productImage" class="form-label">Image</label>
+                        <input type="file" id="productImage" name="productImage" #fileInput class="form-control form-control-sm form-control-xs" (change)="onFileSelected($event)" required>
+                    </div>
+                    <button class="btn btn-sm btn-primary" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
